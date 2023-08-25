@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(farthest-corner at 0px 0px, #0a579a, #030f4c);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ctn {
+  width: 360px;
+  height: 360px;
+}
+
+@keyframes swim {
+  50% {
+    transform: scaleX(0.7) scaleY(1.5);
+  }
+}
+
+#jelly-body {
+  position: absolute;
+  width: 300px;
+  height: 60px;
+  transform-box: fill-box;
+  transform-origin: center;
+  background-color: aqua;
+  animation: 4s swim infinite ease-out;
+  box-shadow:
+    0 0 60px 30px #fff,  /* inner white */
+    0 0 100px 60px #f0f, /* middle magenta */
+    0 0 140px 90px #0ff;
+}
+
+#radialGradient5850{
+    background-color: aliceblue;
+}
+
+#jelly-body {
+  background-color: aliceblue;
+}
+
+@keyframes tentacle {
+  0% {
+    transform: translateY(-178px);
+    stroke-dashoffset: -185px;
+  }
+
+  100% {
+    transform: translateY(0px);
+    stroke-dashoffset: 0px;
+  }
+}
+
+.tentacle {
+  stroke-dasharray: 178px;
+  animation: 8s tentacle infinite linear;
+}
+
+@keyframes move {
+  50% {
+    transform: translateY(-50px);
+  }
+}
+
+#jellyfish {
+  animation: 4s move infinite linear;
+}
+
+.svg5108-glow {
+  filter: url(#glow);
+}
