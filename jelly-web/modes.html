@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>PartyMode</title>
+  <link href="main.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+  <script src="party.js"></script>
+  <script src="main.js"></script>
+  <script src="jelly-state.service.js"></script>
+  <meta http-equiv="Content-Security-Policy" content="connect-src 'self' http://192.168.0.163;">
+
+</head>
+
+<body>
+
+<div class="section">
+
+  <div class="container">
+    <a href="index.html">
+      <button type="button" class="btn mt-2">
+        <span class="material-symbols-outlined" style="margin-top: 0.25em">arrow_back</span>
+      </button>
+    </a>
+    <h1>Partymode</h1>
+    <img id="sponge-bob" style="display: none" src="giphy.gif" alt="sponge bob">
+    <label for="party" id="partyLabel" class="mt-2">
+      Beats per minute
+    </label>
+    <input id="party" class="inp mt-1" type="number">
+    <p id="validation-error" style="color: #ff5555; font-weight: bold; display: none">Ds mues e realistischi zahl si du payas</p>
+    <button type="button" id="partyBtn" class="btn mt-2" onclick="switchToPartyMode()" >okeyy lets goo</button>
+    <button type="button" id="stopPartyBtn" class="btn mt-2" style="display: none" onclick="stopPartyMode()" >Fertig!</button>
+
+
+  </div>
+
+
+</div>
+
+
+</body>
+
+</html>
