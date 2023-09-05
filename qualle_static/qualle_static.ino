@@ -60,9 +60,9 @@ void loop() {
   delay(100);    
   digitalWrite(RED, HIGH);  // turn the LED on (HIGH is the voltage level)
   delay(1000);     */                 // wait for a second
-  // digitalWrite(QUALLE, HIGH); 
-  // delay(255);
-  // digitalWrite(QUALLE, LOW); 
-  // delay(100);
+    // digitalWrite(QUALLE, HIGH); 
+    // delay(255);
+    // digitalWrite(QUALLE, LOW); 
+    // delay(100);
 
 }

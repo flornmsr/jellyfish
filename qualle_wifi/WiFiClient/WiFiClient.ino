@@ -35,8 +35,9 @@ void setup()
   connect_WiFi();
   initialize_web_server();
   initialize_web_server_loop();
-  pinMode(QUALLE, OUTPUT);
-  digitalWrite(QUALLE, HIGH); 
+  initialize_party_mode_loop();
+  pinMode(JELLY_LED_PIN, OUTPUT);
+  digitalWrite(JELLY_LED_PIN, HIGH); 
 
 }
 
